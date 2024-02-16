@@ -6,10 +6,13 @@ const observer = new IntersectionObserver((entries)=>{
     const intersecting = entry.isIntersecting;
     if (intersecting){
       classList.add("scroll-animation");
-      observer.unobserve(entry.target);
+    }
+    else{
+      classList.remove("scroll-animation");
     }
   })
-},{
+},
+{
   threshold:0.1,
 });
 
