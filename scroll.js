@@ -16,6 +16,7 @@ const observer = new IntersectionObserver((entries)=>{
   threshold:0.1,
 });
 
+
 for(let element of elements){
   observer.observe(element);
 }
