@@ -72,7 +72,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: position 1s, opacity 1s;
+  transition: position 1s, visibility 1s;
 }
 
 .loading-text{
@@ -81,7 +81,7 @@ body{
 
 .loaded{
   opacity: 0;
-  position: none;
+  visibility: none;
 }
 
 iframe{
